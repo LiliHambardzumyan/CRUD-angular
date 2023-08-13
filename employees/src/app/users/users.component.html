@@ -1,0 +1,13 @@
+<button routerLink = "/add-user">Add employee</button>
+<div *ngFor = "let user of this.users">
+  <div class = "container" (click) = "peakUser(user.id)">
+    <div class = "user-image">
+      <img [src] = 'user.employee_gender === "Male" ? "./assets/photos/male.jpg" : "./assets/photos/female.jpg"' alt = "avatar" width = "60%" height = "120px">
+    </div>
+    <div class = "user-info">
+      <div class = "user-name">Full Name: {{user.employee_name}}</div>
+      <div class = "user-age">Age: {{user.employee_age + " years old"}}</div>
+      <div class = "user-salary">Salary: {{user.employee_salary + " $"}}</div>
+    </div>
+  </div>
+</div>

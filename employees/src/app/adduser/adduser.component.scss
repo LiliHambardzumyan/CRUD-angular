@@ -1,0 +1,82 @@
+@import "src/app/colors.scss";
+
+.container {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  width: 30%;
+  height: 90%;
+  border: 3px solid $txt-grey;
+  border-radius: 80px;
+  & input {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+  }
+  & .salary, .text, .age {
+  position: relative;
+  border: none;
+  border-bottom: 1px solid $bg-blue;
+  width: 90%;
+  outline: none;
+  font-size: 22px;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: $bg-blue;
+  &::placeholder {
+    color: $txt-grey;
+  }
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+   display: none;
+    }
+  }
+  & .header {
+    font-size: 30px;
+    position: absolute;
+    left: calc((100% - 232px) / 2);
+    top: 20%;
+    color: $bg-blue;
+  }
+  & .checkbox{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    width: 90%;
+    & #male{
+      position: absolute;
+      left: 2%;
+      width: 10%;
+    }
+    & #label_male {
+      position: relative;
+      font-size: 18px;
+      color: $bg-blue;
+      left: 15%;
+    }
+    & #female {
+      position: absolute;
+      left: 32%;
+      width: 10%;
+
+    }
+    & #label_female {
+      position: absolute;
+      font-size: 18px;
+      color: $bg-blue;
+      left: 45%;
+    }
+  }
+  & .addbtn {
+    position: absolute;
+    bottom: 5%;
+    width: 20%;
+    height: 5%;
+    left: 40%;
+    background-color: $bg-blue;
+    color: white;
+    border: none;
+    border-radius: 80px;
+  }
+}

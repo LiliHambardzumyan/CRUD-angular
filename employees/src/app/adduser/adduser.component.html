@@ -1,0 +1,13 @@
+<div class = "container">
+  <div class = "header">ADD EMPLOYEE</div>
+  <input type = "text" placeholder = "Full Name" class = "text" [(ngModel)] = "this.new_employee.employee_name">
+  <input type = "number" placeholder= "Age" class = "age" [(ngModel)] = "this.new_employee.employee_age">
+  <input type = "number" placeholder = "Salary" class = "salary" [(ngModel)] = "this.new_employee.employee_salary">
+  <div class="checkbox">
+    <input type = "checkbox" name = "male" id = "male" [ngModel] = "this.new_employee.employee_gender">
+    <label id = "label_male" for = "male">Male</label>
+    <input type = "checkbox" name = "Female" id = "female" [ngModel] = "this.new_employee.employee_gender">
+    <label id = "label_female" for = "female">Female</label>
+  </div>
+  <button class ="addbtn" (click) = "addEmployee()">ADD</button>
+</div>

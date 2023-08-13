@@ -1,0 +1,53 @@
+@import "src/app/colors.scss";
+
+button {
+  position: absolute;
+  left: 40%;
+  top: 3%;
+  width: 20%;
+  height: 4%;
+  border: 2px solid $txt-grey;
+  border-radius: 5px;
+  color: $bg-blue;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  &:hover{
+    scale: 1.1;
+    color: $txt-grey;
+    border: 2px solid $bg-blue;
+  }
+}
+.container{
+  top: 50px;
+  position: relative;
+  width: calc(80% - 40px);
+  left: calc( (100% - (80% - 40px) ) / 2);
+  display: inline-block;
+  box-shadow: 0 0 5px 5px lightgrey;
+  border-radius: 5px;
+  margin: 20px;
+
+  & .user-image, .user-info {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 0;
+  }
+  & .user-image{
+    width: 40%;
+  }
+  & .user-info {
+    line-height: 2;
+    width: 60%;
+  }
+  & .user-age {
+    color: lightcoral;
+  }
+  & .user-name {
+    color: $bg-blue;
+  }
+  & .user-salary {
+    color: forestgreen;
+  }
+}
