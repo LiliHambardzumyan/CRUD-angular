@@ -1,3 +1,4 @@
 # CRUD-angular
-Create, Read, Update, and Delete an Employees List
-w/out node_modules
+Angular Project w/out node_modules
+
+Create, Read, Update, and Delete an Employees List.
